@@ -1,0 +1,53 @@
+@import "../../scss/variables";
+
+.form {
+  padding: 2rem;
+  box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.2);
+  border-radius: $raduis;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 80vw;
+  max-width: 600px;
+
+  &__alert {
+    height: 2rem;
+  }
+
+  &__title {
+    color: $white-color;
+  }
+  &__control {
+    border: 0.2rem solid $blue-color-2;
+    background-color: $bg-color;
+    border-radius: $raduis;
+    padding: 0.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__input {
+    font-size: 1.2rem;
+    padding: 0.2rem;
+    color: #fff;
+    width: 75%;
+  }
+  &__btn {
+    background: $blue-color-2;
+    padding: 0.5rem 1rem;
+    height: 100%;
+    border-radius: $raduis;
+    max-width: 5rem;
+    flex-grow: 1;
+    color: $white-color;
+    font-size: 1.1rem;
+    cursor: pointer;
+  }
+  &__clear {
+    background: $blue-color-1;
+    color: $red-color;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    border-radius: $raduis;
+  }
+}

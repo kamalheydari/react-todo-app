@@ -1,0 +1,33 @@
+@import "../../scss/variables";
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  &__item {
+    border-radius: $raduis;
+    background: $blue-color-1;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $white-color;
+  }
+  &__btn-container {
+    button {
+      margin-left: 0.8rem;
+      cursor: pointer;
+    }
+  }
+}
+
+.icon {
+  font-size: 1.1rem;
+}
+
+.delete {
+  color: rgba(209, 18, 18, 0.897);
+}
+.edit {
+  color: $green-color;
+}
