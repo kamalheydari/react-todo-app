@@ -62,7 +62,6 @@ const AppProvider = ({ children }) => {
     setList(list.filter((item) => item.id !== id));
   };
   const editItem = (id) => {
-    console.log(id);
     const specificItem = list.find((item) => item.id === id);
     setIsEditing(true);
     setEditID(id);
